@@ -271,7 +271,7 @@ Labels:             beta.kubernetes.io/arch=amd64
                     kubernetes.io/os=linux
 Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: /var/run/dockershim.sock
                     node.alpha.kubernetes.io/ttl: 0
-                    projectcalico.org/IPv4Address: 157.245.209.211/20
+                    projectcalico.org/IPv4Address: xxx.xxx.xxx.xxx/20
                     projectcalico.org/IPv4IPIPTunnelAddr: 192.168.129.64
                     volumes.kubernetes.io/controller-managed-attach-detach: true
 CreationTimestamp:  Tue, 24 Sep 2019 12:18:26 +0000
