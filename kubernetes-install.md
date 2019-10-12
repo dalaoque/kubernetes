@@ -48,7 +48,8 @@
 sudo curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add && \
 sudo echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" > /etc/apt/sources.list.d/kubernetes.list && \
 sudo apt-get update && \
-sudo apt-get install -y kubelet=1.16.0-00 kubeadm=1.16.0-00 kubectl=1.16.0-00 --allow-unauthenticated
+sudo apt-get install -y kubelet=1.16.0-00 kubeadm=1.16.0-00 kubectl=1.16.0-00 --allow-unauthenticated && \
+sudo apt-mark hold kubelet kubeadm kubectl
 ```
 
 检查软件版本
