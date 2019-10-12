@@ -104,7 +104,19 @@ Juju创建一个默认模型，但是为每个项目创建一个新模型很有�
 
 `Added 'k8s' model on localhost/localhost with credential 'localhost' for user 'admin'`
 
+新建终端Tab 执行 `sudo juju debug-log -m k8s-test -n 20` 查看
+
 部署Charmed Kubernetes了,速度很慢，要有心理准备，目前没有解决方案
+
+```shell
+sudo curl -o ~/aws-overlay.yaml https://raw.githubusercontent.com/charmed-kubernetes/bundle/master/overlays/aws-overlay.yaml && \
+
+sudo curl -o ~/calico-overlay.yaml https://raw.githubusercontent.com/charmed-kubernetes/bundle/master/overlays/calico-overlay.yaml && \
+
+sudo juju deploy cs:~containers/charmed-kubernetes-270 --overlay aws-overlay.yaml --trust --overlay calico-overlay.yaml
+```
+
+或者
 
 `sudo juju deploy charmed-kubernetes`
 
