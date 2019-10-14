@@ -1,4 +1,4 @@
-# 服务发现
+# 通过yaml文件部署Services
 
 ## NodePort
 
