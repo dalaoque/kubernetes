@@ -1,8 +1,8 @@
 # 从零搭建 kubernetes 采坑之路
 
-> 如果发现错误欢迎提交正确的pr，十分感谢
+> 如果发现错误欢迎指正并提交正确的pr，十分感谢
 
-## 目录
+## Kubernetes 域
 
 - [Kubernetes 集群环境安装搭建](kubernetes-install.md)
 
@@ -19,3 +19,7 @@
 - [通过 yaml文件创建 Services](kubernetes-services-yaml.md)
 
 - [通过 Charmed Kubernetes 集成集群](kubernetes-charmed.md)
+
+## Docker 域
+
+- [使用 Dockerfile 文件构建镜像](docker-development.md)
